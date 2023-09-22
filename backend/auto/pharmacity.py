@@ -55,7 +55,7 @@ try:
     with connection.cursor() as cursor:
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS thuocsi_vn (
-                title TEXT primary key,
+                title TEXT ,
                 giacu TEXT,
                 ngaycu DATE,
                 giamoi TEXT,
