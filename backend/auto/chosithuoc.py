@@ -205,7 +205,9 @@ def run_spider():
     process = CrawlerProcess(settings={
         
     })
-
+    spider = LaptopSpider()
+    spider.create_table()
+    
     process.crawl(LaptopSpider)
     process.start()
 
